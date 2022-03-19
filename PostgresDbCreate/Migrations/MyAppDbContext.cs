@@ -14,6 +14,6 @@ namespace PostgresDbCreate.Migrations
         }
         public DbSet<Blog> Blogs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-         => optionsBuilder.UseNpgsql("Server=localhost;Port=5434;Database=MyDatabase;User Id=postgres;Password=918508973252");
+         => optionsBuilder.UseNpgsql("Server=localhost;Port=5434;Database=MyDatabase;User Id=postgres;Password=*****"); //change your password
     }
 }
